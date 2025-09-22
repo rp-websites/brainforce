@@ -45,6 +45,17 @@ function showEmailSuccess() {
         successMessage.textContent = 'Thank you! We\'ll notify you when ready.';
         successMessage.setAttribute('aria-live', 'polite');
         
+        successMessage.style.cssText = `
+            background: #FFD700;       /* gold */
+            color: #0a1a2f;            /* dark navy */
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        `;
+
         form.appendChild(successMessage);
         
         setTimeout(() => {
