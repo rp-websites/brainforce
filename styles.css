@@ -841,12 +841,19 @@ p {
 }
 
 .platform-icon {
-    font-size: 0.7rem;
+    width: 80px;
+        height: 80px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        font-size: 80px;
+        margin-bottom: 10px;
 }
 
 .platform-text {
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 1rem;
     line-height: 1;
     margin: 0;
 }
@@ -914,10 +921,6 @@ p {
 .platform-badge:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-}
-
-.platform-icon {
-    font-size: 3rem;
 }
 
 .platform-badge h3 {
