@@ -18,10 +18,14 @@
     <meta property="twitter:title" content="BRAINFORCE - Where Heritage Meets Gaming">
     <meta property="twitter:description" content="Culture shouldn't feel like homework - make it the best part of family game night.">
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1.0">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#6C5CE7">
 </head>
@@ -38,12 +42,12 @@
                 <a href="#games">Games</a>
                 <a href="#partnerships">Partnerships</a>
                 <a href="#cultures">Request Games</a>
-                <a href="mailto:">Contact</a>
+                <a href="mailto:contact@brainforce.am">Contact</a>
             </nav>
             
             <div class="live-counter">
                 <span class="controller-icon">🎮</span>
-                <span class="counter-text">Current Players: 200,341</span>
+                <span class="counter-text">Current Players: <span id="playerCount">210086</span></span>
             </div>
         </div>
     </header>
@@ -130,14 +134,19 @@
                     <div class="card-icon">📢</div>
                     <h3>Advertising Opportunities</h3>
                     <p>Reach engaged cultural gaming communities</p>
-                    <button class="btn-primary">Inquire About Ads</button>
+                    <!-- <button class="btn-primary">Inquire About Ads</button> -->
+                    <a href="mailto:contact@brainforce.am?subject=Ad%20Inquiry" class="btn-primary">
+                        Inquire About Ads
+                    </a>
                 </div>
                 
                 <div class="partnership-card">
                     <div class="card-icon">🤝</div>
                     <h3>Support Our Mission</h3>
                     <p>Sponsorship and collaboration possibilities</p>
-                    <button class="btn-primary">Partner With Us</button>
+                    <a href="mailto:contact@brainforce.am?subject=Partner%20With%20Us" class="btn-primary">
+                        Partner With Us
+                    </a>
                 </div>
             </div>
         </div>
@@ -156,10 +165,10 @@
                     </div>
                     <div class="game-badge available">Available Now</div>
                     <h3>Belote</h3>
-                    <p>Armenian Card Game</p>
+                    <p>Armenian Version</p>
                     <div class="platform-buttons">
                         <a href="https://play.google.com/store/apps/details?id=am.reblot&hl=en" target="_blank" class="platform-btn android-btn">
-                            <span class="platform-icon">🤖</span>
+                            <img src="android_robot.svg" alt="Android" class="platform-icon">
                             <span class="platform-text">Android</span>
                         </a>
                         <a href="https://reblot.am" class="platform-btn web-btn" target="_blank">
@@ -167,7 +176,7 @@
                             <span class="platform-text">Web</span>
                         </a>
                         <button class="platform-btn ios-btn coming-soon">
-                            <span class="platform-icon">📱</span>
+                            <img src="apple_logo_black.svg" alt="iOS" class="platform-icon">
                             <span class="platform-text">iOS</span>
                             <span class="coming-soon-text">Coming Soon</span>
                         </button>
@@ -181,7 +190,9 @@
                     <div class="game-badge beta">Coming Soon</div>
                     <h3>7 Stones</h3>
                     <p>Global Heritage Game | Beta versions - ARM, Iranian, Indian</p>
-                    <button class="btn-secondary">Get Notified</button>
+                    <a href="mailto:contact@brainforce.am?subject=Get%20Notified" class="btn-primary">
+                        Get Notified
+                    </a>
                 </div>
                 
                 <div class="game-card more-card">
@@ -190,7 +201,9 @@
                     </div>
                     <h3>More Games Soon</h3>
                     <p>Request Your Traditional Games</p>
-                    <button class="btn-secondary">Request Games</button>
+                    <a href="mailto:contact@brainforce.am?subject=Request%20Games" class="btn-primary">
+                        Request Games
+                    </a>
                 </div>
             </div>
         </div>
@@ -206,7 +219,7 @@
             <div class="donations-content">
                 <div class="donations-icon">❤️</div>
                 <div class="donations-buttons">
-                    <button class="btn-primary">Donate Now</button>
+                    <a href="https://paypal.me/reblotam" class="btn-primary" target="_blank" rel="noopener">Donate Now</a>
                     <a href="problem.html" class="btn-secondary">Learn About Impact</a>
                 </div>
             </div>
@@ -228,15 +241,15 @@
                 <div class="game-piece-item">🎪</div>
             </div>
             
-            <div class="cultures-cta">
+            <!-- <div class="cultures-cta">
                 <p>Join our waitlist to be notified when ready</p>
-                <form class="early-access-form">
+                <form action="mailto:contact@brainforce.am?subject=Early%20Access%20Waitlist" method="POST" enctype="text/plain">
                     <div class="email-input-group">
-                        <input type="email" placeholder="Enter your email address" class="email-input" required>
+                        <input type="email" name="email" placeholder="Enter your email address" class="email-input" required>
                         <button type="submit" class="btn-primary">Sign Up for Early Access</button>
                     </div>
                 </form>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -246,7 +259,9 @@
             <h2 class="section-title">Join thousands gaming their way through cultural adventures</h2>
             
             <div class="final-cta-buttons">
-                <a href="mailto:" class="btn-primary">Request Games</a>
+                <a href="mailto:contact@brainforce.am?subject=Request%20Games" class="btn-primary">
+                    Request Games
+                </a>
             </div>
         </div>
     </section>
@@ -273,7 +288,19 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        const baseValue = 210087;
+        const startTime = new Date("2025-09-21T00:00:00");
+        const ratePerHour = 4;
+        function updateCounter() {
+            const now = new Date();
+            const hoursPassed = (now - startTime) / (1000 * 60 * 60);
+            const newValue = Math.floor(baseValue + hoursPassed * ratePerHour);
+            document.getElementById("playerCount").textContent = newValue.toLocaleString();
+        }
+        updateCounter();
+        setInterval(updateCounter, 60 * 1000);
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
